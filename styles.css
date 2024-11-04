@@ -1,0 +1,158 @@
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#welcome{
+    text-align: center;
+    font-size: 3rem;
+}
+
+p {
+    font-size: 18px; /* Cambia "16px" al tamaño que desees */
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 18px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#102c54;
+    color: white;
+    text-align: center;
+    padding: 10px ;
+    position: relative;
+    width: 100%;
+    margin-top:auto
+    /*bottom: 0;*/
+}
+
+thead a {
+    text-decoration:none ;
+    color: white;
+    font-size: 1.2 em;
+}
+
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+th, td {
+    padding: 18px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #007BFF;
+    color: white;
+}
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.li2{
+    list-style-type: disc; /* Cambia el estilo de las viñetas, por ejemplo: circle, square, etc. */
+    padding-left: 20px;    /* Agrega espacio a la izquierda de la lista */
+    font-size: 18px; 
+}
+/* Media Queries para diferentes tamaños de pantalla */
+
+/* Centrar la lista y el contenido */
+.centered-list {
+    list-style-type: disc; /* Elimina los puntos de la lista */
+    padding: 0;
+    text-align: center; /* Centra el texto de los elementos de la lista */
+    margin: 0 auto; /* Centra la lista horizontalmente */
+    max-width: 600px; /* Controla el ancho máximo de la lista */
+}
+
+.centered-list li {
+    margin: 10px 0; /* Espacio entre los elementos de la lista */
+    font-size: 1.1em; /* Aumenta ligeramente el tamaño de la fuente */
+    list-style-position: inside;
+}
+
+
+
+/* Para pantallas de PC (ancho mínimo 1024px) */
+@media (min-width: 1024px) {
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+/* Para tabletas (ancho mínimo 768px y máximo 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    nav ul li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+    
+    main {
+        padding: 15px;
+    }
+}
+
+/* Para móviles (ancho máximo 767px) */
+@media (max-width: 767px) {
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
